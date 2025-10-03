@@ -1,7 +1,7 @@
 import csv
 from openpyxl import load_workbook  # to read Excel files
 
-def airports(path="/Users/mac/Downloads/Mini Project/Question 3 data/Airports.csv"):
+def airports(path="Airports.csv file location"):
     #airport data file
     rows = csv.reader(open(path))
     next(rows)  # skip the header row
@@ -11,7 +11,7 @@ def airports(path="/Users/mac/Downloads/Mini Project/Question 3 data/Airports.cs
         out.append([city, float(lat), float(lon)])
     return out
 
-def airlines(path="/Users/mac/Downloads/Mini Project/Question 3 data/Airlines.csv"):
+def airlines(path="Airlines.csv file location"):
     # airlines data file
     rows = csv.reader(open(path))
     next(rows)  # skip the header row
@@ -21,7 +21,7 @@ def airlines(path="/Users/mac/Downloads/Mini Project/Question 3 data/Airlines.cs
         out.append([name, float(spd), float(ff), float(pf)])
     return out
 
-def connections(path="/Users/mac/Downloads/Mini Project/Question 3 data/Connections.xlsx"):
+def connections(path="Connections.xlsx file location"):
     # load the Excel file with connection data
     wb = load_workbook(path, data_only=True)
     out = {}  # create empty dictionary for results
