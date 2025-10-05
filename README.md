@@ -1,20 +1,21 @@
-# Air Route Assignment
+# Wind Power Forecasting
 
 ## Overview
-A Python program that finds the **most efficient flight routes** based on **flight time, cost, and emissions** using the **Hungarian algorithm**.
+This project analyses real European wind power generation data to **visualise production trends** and **forecast future output** using an **ARIMA time-series model**.  
 
 ## Features
-- Optimal route assignment using the Hungarian algorithm  
-- Distance calculation with the Haversine formula  
-- Flight time, fuel, and ticket price estimation  
-- Bar charts comparing airline performance  
+- Reads and processes historical wind generation datasets  
+- Generates infographics for hourly, monthly, quarterly, and yearly power output  
+- Calculates statistical metrics (mean, standard deviation, skewness)  
+- Implements **ARIMA forecasting** to predict future energy generation  
+- Automatically adjusts plots and scales for different countries
 
-## Tech
-- **Language:** Python
-- **Libraries:** NumPy, Matplotlib, SciPy
+## Tech Stack
+- **Language:** Python  
+- **Libraries:** Pandas, Matplotlib, NumPy, statsmodel
+- **Dataset:** `time_series_60min_singleindex.csv`  
 
 ## How to Run
-Download data files and change file placeholders in 'load.py'
-```bash
-pip install numpy matplotlib scipy
-python main.py
+Download the data file and change the placeholder in 'load.py'
+   ```bash
+   pip install pandas matplotlib statsmodels numpy
