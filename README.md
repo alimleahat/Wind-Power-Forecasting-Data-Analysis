@@ -12,10 +12,10 @@ This project analyses real European wind power generation data to **visualise pr
 
 ## Tech Stack
 - **Language:** Python  
-- **Libraries:** Pandas, Matplotlib, NumPy
+- **Libraries:** Pandas, Matplotlib, NumPy, SciPy, openpyxl
 - **Dataset:** `time_series_60min_singleindex.csv`  
 
 ## How to Run
 Download the data file and change the placeholder in 'load.py'
    ```bash
-   pip install pandas matplotlib numpy
+   pip install pandas matplotlib numpy scipy, openpyxl
